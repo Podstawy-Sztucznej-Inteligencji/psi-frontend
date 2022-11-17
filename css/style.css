@@ -1,0 +1,57 @@
+.main {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    display: inline-block;
+    padding: 20px;
+}
+
+.logo > img {
+    float: left;
+    max-height: 70px;
+    width: auto;
+}
+
+.logo > p {
+    float: right;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.logo:link,
+.logo:visited,
+.logo:hover,
+.logo:active {
+    text-decoration: none;
+}
+
+.header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 20px 20%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section .h2 {
+    margin-bottom: 20px;
+}
+
+.footer {
+    height: 50px;
+    /*border: 1px solid blue;*/
+}

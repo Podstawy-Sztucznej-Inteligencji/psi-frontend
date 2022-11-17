@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <main class="main container">
+        <header class="header">
+            <a class="logo" href="#">
+                <img src="./images/animals.png" alt="animals"/>
+                <p>PSI</p>
+            </a>
+        </header>
+
+        <section class="section">
+            <h2 class="h2">
+                Select
+                <small class="text-muted">Image Recognition</small>
+                options
+            </h2>
+
+            <form>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Select Image Recognition algorithm</label>
+                    <select class="form-select" multiple aria-label=".form-select-lg">
+                        <option value="1">Faster Region-based CNN (Faster RCNN)</option>
+                        <option value="2">Single Shot Detector (SSD)</option>
+                        <option value="3">You Only Look Once (YOLO)</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Select animal image</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-primary btn-lg">Process Image</button>
+                    <button type="button" class="btn btn-secondary btn-lg">Reset</button>
+                </div>
+
+            </form>
+        </section>
+
+        <footer class="footer"></footer>
+    </main>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
