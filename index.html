@@ -26,35 +26,33 @@
 
             <form>
                 <div class="mb-3">
-                    <label for="formFile" class="form-label">Select Image Recognition algorithm</label>
-                    <select class="form-select" multiple aria-label=".form-select-lg">
-                        <option value="1">Faster Region-based CNN (Faster RCNN)</option>
-                        <option value="2">Single Shot Detector (SSD)</option>
-                        <option value="3">You Only Look Once (YOLO)</option>
+                    <label for="formFile" class="form-label">Select Image Recognition algorithms</label>
+                    <select id="models" class="form-select" multiple aria-label=".form-select-lg">
                     </select>
                 </div>
 
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Select animal image</label>
-                    <input class="form-control" type="file" id="formFile">
-                </div>
-
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <input class="form-control" type="file" id="formFile" name="formFile">
                 </div>
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button type="button" class="btn btn-primary btn-lg">Process Image</button>
-                    <button type="button" class="btn btn-secondary btn-lg">Reset</button>
+                    <button id="upload" type="button" class="btn btn-primary btn-lg" onclick="processImage()">Process Image</button>
+                    <button type="reset" class="btn btn-secondary btn-lg">Reset</button>
                 </div>
 
             </form>
         </section>
 
+        <section class="section">
+            <h2 id="resultsHeader" class="h2">Results (0)</h2>
+            <div class="accordion" id="results">
+            </div>
+        </section>
         <footer class="footer"></footer>
     </main>
 
+<script src="js/script.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
