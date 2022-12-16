@@ -1,5 +1,5 @@
-const PROCESS_IMAGE_URL = "http://localhost:8081/test/";
-const GET_MODELS_URL = "http://localhost:8081/test";
+const PROCESS_IMAGE_URL = "/infere";
+const GET_MODELS_URL = "/list_models";
 
 let counter = 0;
 
